@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { PrismaRepositoryService } from './prisma-repository/prisma-repository.service';
 
-@Module({})
+@Module({
+    providers: [PrismaRepositoryService],
+})
 export class PrismaModule {}
